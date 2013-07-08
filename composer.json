@@ -1,5 +1,5 @@
 {
-    "name": "rfink/EdmundsBundle",
+    "name": "rfink/edmunds-bundle",
     "type": "symfony-bundle",
     "description": "Symfony2 bundle for the edmunds php api",
     "autoload": {
