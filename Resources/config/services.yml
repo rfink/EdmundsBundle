@@ -1,0 +1,40 @@
+parameters:
+  edmunds.base_url: http://api.edmunds.com
+  edmunds.vehicle:
+      base_url: %edmunds.base_url%
+      version: v1
+      api_key: ~
+  edmunds.dealer:
+      base_url: %edmunds.base_url%
+      version: v1
+      api_key: ~
+  edmunds.inventory:
+      base_url: %edmunds.base_url%
+      version: v1
+      api_key: ~
+  edmunds.editorial:
+      base_url: %edmunds.base_url%
+      version: v1
+      api_key: ~
+
+services:
+  edmunds.vehicle_api:
+    class: RF\Edmunds\Vehicle\Client
+    factory_class: RF\Edmunds\Vehicle\Client
+    factory_method: factory
+    arguments: [ %edmunds.vehicle% ]
+  edmunds.dealer_api:
+    class: RF\Edmunds\Dealer\Client
+    factory_class: RF\Edmunds\Dealer\Client
+    factory_method: factory
+    arguments: [ %edmunds.dealer% ]
+  edmunds.inventory_api:
+    class: RF\Edmunds\Inventory\Client
+    factory_class: RF\Edmunds\Inventory\Client
+    factory_method: factory
+    arguments: [ %edmunds.inventory% ]
+  edmunds.editorial_api:
+    class: RF\Edmunds\Editorial\Client
+    factory_class: RF\Edmunds\Editorial\Client
+    factory_method: factory
+    arguments: [ %edmunds.editorial% ]
