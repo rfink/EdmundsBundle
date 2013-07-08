@@ -1,0 +1,11 @@
+imports:
+    - { resource: "@RFEdmundsBundle/Resources/config/services.yml" }
+
+framework:
+    secret:          secret
+    test: ~
+    validation:      { enable_annotations: true }
+    session:
+        storage_id: session.storage.filesystem
+
+rf_edmunds: ~
