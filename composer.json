@@ -10,5 +10,7 @@
         "symfony/symfony": ">2.1",
         "rfink/edmunds-php-api": "dev-master"
     },
-    "target-dir": "RF/EdmundsBundle"
+    "target-dir": "RF/EdmundsBundle",
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }

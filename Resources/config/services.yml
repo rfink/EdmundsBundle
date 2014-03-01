@@ -3,19 +3,19 @@ parameters:
   edmunds.vehicle:
       base_url: %edmunds.base_url%
       version: v1
-      api_key: ~
+      api_key: %edmunds.vehicle.api_key%
   edmunds.dealer:
       base_url: %edmunds.base_url%
       version: v1
-      api_key: ~
+      api_key: %edmunds.dealer.api_key%
   edmunds.inventory:
       base_url: %edmunds.base_url%
       version: v1
-      api_key: ~
+      api_key: %edmunds.inventory.api_key%
   edmunds.editorial:
       base_url: %edmunds.base_url%
       version: v1
-      api_key: ~
+      api_key: %edmunds.editorial.api_key%
 
 services:
   edmunds.vehicle_api:
